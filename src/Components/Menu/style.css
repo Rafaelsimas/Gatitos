@@ -1,60 +1,112 @@
 .menu-mobile {
-  width: 100%;
-  height: 100px;
+  background: var(--main-color);
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: var(--main-color);
+  width: 100%;
+  height: 100px;
 }
 
 .menu-mobile nav {
-  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  height: 100px;
 }
 
-.title-top {
+.menu-mobile nav .title-top {
   color: var(--main-text);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .menu-mobile nav ion-icon {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.drawer {
-  height: 100vh;
-  margin-top: 100px;
-  background-color: var(--main-color);
-  width: 100%;
-  margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 30px;
-}
-
-.drawer li {
-  padding: 0.5rem;
-  text-align: center;
-  margin-top: 50px;
-  width: 80%;
-  font-family: "poppins-medium";
-  color: var(--main-text);
-  color: white;
-  font-weight: bold;
-}
-
-.displayHidden {
   display: none;
 }
 
-.drawer ion-icon {
+.link-desktop {
+  display: flex;
+  align-items: center;
+}
+
+.link-desktop .link {
+  margin-left: 1.5rem;
   color: var(--main-text);
-  margin-top: 90px;
-  font-size: 2rem;
+}
+
+.link-desktop .link.active {
+  background-color: green;
+  padding: 0.5rem 1.9rem;
+  border-radius: 7px;
+}
+
+.drawer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .link-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+  }
+
+  .menu-mobile nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-top {
+    color: var(--main-text);
+    font-size: 1.3rem;
+  }
+
+  .menu-mobile nav ion-icon {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .drawer {
+    height: 100vh;
+    margin-top: 100px;
+    background-color: var(--main-color);
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+  }
+
+  .drawer li {
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 50px;
+    width: 80%;
+    font-family: "poppins-medium";
+    color: var(--main-text);
+    color: white;
+    font-weight: bold;
+  }
+
+  .displayHidden {
+    display: none;
+  }
+
+  .drawer ion-icon {
+    color: var(--main-text);
+    margin-top: 90px;
+    font-size: 2rem;
+  }
 }

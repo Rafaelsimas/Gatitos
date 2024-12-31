@@ -18,6 +18,12 @@ export default function Menu() {
         <nav>
           <div className="title-top poppins-bold">Gatitos</div>
           <ion-icon onClick={handleClickOpen} name="menu-outline"></ion-icon>
+          <ul className="link-desktop">
+            <li className="link poppins-regular">Home</li>
+            <li className="link poppins-regular">Sobre nós</li>
+            <li className="link poppins-regular">Adote</li>
+            <li className="link poppins-regular active">Login</li>
+          </ul>
         </nav>
       </header>
       <ul className={openMenu > 0 ? "drawer" : "drawer displayHidden"}>
