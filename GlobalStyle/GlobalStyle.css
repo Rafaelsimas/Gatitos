@@ -5,3 +5,8 @@
   list-style: none;
   text-decoration: none;
 }
+
+:root {
+  --main-color: blueviolet;
+  --main-text: #cfcfcf;
+}
