@@ -1,0 +1,107 @@
+.container {
+  margin-top: 10px;
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container .left,
+.right {
+  width: 50%;
+}
+
+.container .left .text-md {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--main-text);
+}
+
+.container .left .text-xl {
+  font-size: 3.3rem;
+  margin-bottom: 20px;
+  color: var(--main-text);
+}
+
+.container .left .text-sm {
+  font-size: 1.2rem;
+  color: var(--main-text);
+  margin-bottom: 20px;
+}
+
+.container .left .box-action-btn {
+  display: flex;
+  gap: 12px;
+}
+.container .left .box-action-btn button {
+  width: 30%;
+  padding: 1.2rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.container .left .box-action-btn button.btn-adoption {
+  background-color: purple;
+  color: var(--main-text);
+  font-weight: bold;
+}
+.container .left .box-action-btn button.btn-more {
+  background-color: green;
+  color: var(--main-text);
+  font-weight: bold;
+}
+
+.container .right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  .container .left,
+  .right {
+    width: 100%;
+  }
+
+  .container .left .text-md {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--main-text);
+    margin-top: 35px;
+  }
+
+  .container .left .text-xl {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--main-text);
+  }
+
+  .container .left .text-sm {
+    font-size: 0.9rem;
+    line-height: 27px;
+    color: var(--main-text);
+    margin-bottom: 20px;
+  }
+
+  .container .left .box-action-btn {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .container .left .box-action-btn button {
+    width: 100%;
+  }
+
+  .container .right {
+    text-align: center;
+  }
+
+  .container .right img {
+    width: 74%;
+  }
+}

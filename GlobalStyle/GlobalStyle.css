@@ -6,7 +6,11 @@
   text-decoration: none;
 }
 
+body {
+  background: var(--main-color);
+}
+
 :root {
   --main-color: blueviolet;
-  --main-text: #cfcfcf;
+  --main-text: #f7f7f7;
 }
