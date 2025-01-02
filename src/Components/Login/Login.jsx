@@ -17,7 +17,7 @@ export default function Login() {
 
     try {
       const request = await axios.post(
-        "http://localhost:4001/login",
+        "https://api-gatitos-v2.vercel.app/login",
         JSON.stringify({ email, password }),
         {
           headers: { "Content-Type": "application/json" },
@@ -35,7 +35,7 @@ export default function Login() {
   }
 
   function getDataAnimals() {
-    const request = axios.get("http://localhost:4001/images")
+    const request = axios.get("https://api-gatitos-v2.vercel.app/images")
     request.then((response) => {
       setImageData(response.data)
     })
