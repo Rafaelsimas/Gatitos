@@ -1,0 +1,54 @@
+.ulImage {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  margin-top: 180px;
+  gap: 30px;
+}
+
+.ulImage li {
+  width: 420px;
+  position: relative;
+}
+
+.ulImage li img {
+  width: 420px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.ulImage li .name {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .ulImage {
+    display: flex;
+  }
+
+  .ulImage li {
+    width: 250px;
+  }
+
+  .ulImage li img {
+    width: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+}

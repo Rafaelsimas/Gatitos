@@ -1,0 +1,35 @@
+.containerLogin {
+  width: 70%;
+  margin-top: 110px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerLogin .text-top {
+  color: var(--main-text);
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.containerLogin input,
+button {
+  padding: 1rem;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .containerLogin {
+    width: 90%;
+    margin-top: 210px;
+  }
+  .containerLogin input,
+  button {
+    padding: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

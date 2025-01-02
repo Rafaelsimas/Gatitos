@@ -27,8 +27,9 @@ export default function Menu() {
             <Link to="/sobre">
               <li className="link poppins-regular">Sobre nós</li>
             </Link>
-            <li className="link poppins-regular">Adote</li>
-            <li className="link poppins-regular active">Login</li>
+            <Link to="/entrar" onClick={handleClickClose}>
+              <li className="link poppins-regular active">Login</li>
+            </Link>
           </ul>
         </nav>
       </header>
@@ -41,7 +42,9 @@ export default function Menu() {
           <li>Sobre</li>
         </Link>
         <li>Adote</li>
-        <li>Login</li>
+        <Link to="/entrar" onClick={handleClickClose}>
+          <li>Login</li>
+        </Link>
         <ion-icon
           className="btn-close"
           onClick={handleClickClose}

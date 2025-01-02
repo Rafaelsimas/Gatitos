@@ -11,6 +11,35 @@ body {
 }
 
 :root {
-  --main-color: blueviolet;
+  --main-color: rgb(88, 27, 146);
   --main-text: #f7f7f7;
+}
+
+.logado {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  align-items: center;
+  margin-top: 102px;
+  width: 100%;
+  margin-inline: auto;
+  color: white;
+  font-family: sans-serif;
+  position: fixed;
+  right: 10rem;
+  top: -0.8rem;
+  background-color: var(--main-color);
+  z-index: 2;
+}
+
+.logado h2 {
+  font-size: 1rem;
+}
+
+.logado img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid orangered;
 }
